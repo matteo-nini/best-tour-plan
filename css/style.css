@@ -10,13 +10,12 @@
     margin: 0px;
 }
 
-body, a, p, sup {
+body, a, p, sup, a:active, a:visited {
     font-family: 'Mulish', sans-serif;
     font-weight: 400;
     text-decoration: none;
+    color: #333333;
 }
-
-a:active, a:visited {text-decoration: none; color: inherit;}
 
 ul {list-style-type: none;}
 
