@@ -1,0 +1,264 @@
+/************************** FONTS IMPORT ****************************/
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+/************************************ INITIAL **************************************/
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body, a, p, sup {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+a:active, a:visited {text-decoration: none; color: inherit;}
+
+ul {list-style-type: none;}
+
+/*************************************** BG COLORS ********************************/
+
+.bgGray {background-color: #F5FAFE;}
+.bgWhite {background-color: #FFFFFF;}
+.bgBlue {background-color: #0A223D;}
+.bgRed {background-color: #EC1F46;}
+
+/************************************************ TEXT *******************************/
+
+.textWhite {color: #FFFFFF;}
+.textRed {color: #EC1F46;}
+.textGray {color: #333333;}
+
+.star {color: #F2994A;}
+
+.size8 {font-size: 8px;}
+.size10 {font-size: 10px;}
+.size12 {font-size: 12px;}
+.size14 {font-size: 14px;}
+.size18 {font-size: 18px;}
+.size24 {font-size: 24px;}
+
+.bold {font-weight: 700;}
+.uppercase {text-transform: uppercase;}
+
+/**************************************** TOP NAVIGATION *****************************/
+
+.topnav {
+    width: 100%;
+    height: 60px;
+    padding: 0px 165px;
+}
+
+.topnav p, .topnav a {
+    float: left;
+    margin: 0px 20px;
+    font-size: 10px;
+    line-height: 60px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.topnav-right {  
+    float: right;
+}
+
+/************************************ CENTRAL NAVBAR ************************************/
+
+.navbar {
+    width: 100%;
+    height: 170px;
+    padding: 0px 180px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    transition: 0.5s ease 0s;
+    transition-property: initial;
+}
+
+.navbar a:hover {
+    color: rgba(51, 51, 51, 0.8)
+}
+
+/******************************/
+/********* NAVBAR LOGO ********/
+/******************************/
+
+.navbar__logo {
+    cursor: pointer;
+    font-family: 'Luckiest Guy', cursive;
+    color: #333333;
+    flex: 1; order: 1;
+}
+
+/******************************/
+/****** NAVBAR SEARCHBOX ******/
+/******************************/
+
+.navbar__searchbox{flex: 2; order: 2; padding: 0 20px;}
+
+.navbar__searchbox input {
+    width: 350px;
+    height: 40px;
+    background-color: #F5FAFE;
+    border-radius: 6px 0 0 6px;
+    border: 0;
+    padding: 0 10px;
+}
+
+.navbar__searchbox input::placeholder, input:focus {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #333333;
+    text-decoration: none;
+}
+
+.navbar__searchbox button {
+    width: 65px;
+    height: 40px;
+    text-align: center;
+    border-radius: 0px 6px 6px 0;
+    border: 0;
+    transition: 0.5s ease 0s;
+    transition-property: initial;
+    margin-left: -4px;
+}
+
+.navbar__searchbox button:hover {
+    background-color: #f34e6d;
+    color: #FFFFFF;
+}
+
+/*********************************/
+/****** NAVBAR RIGHT LINKS ******/
+/********************************/
+
+.navbar__links {
+    flex:1; 
+    order:3; 
+    display: flex; 
+    justify-content: space-evenly; 
+    align-content: center;
+}
+
+.navbar__links a {margin: auto;}
+
+.navbar__links .badge{
+    position: relative;
+    top: -5px;
+    left: -5px;
+    padding: 2px 5px;
+    border-radius: 100%;
+}
+
+/************************************ BOTTOM NAVBAR ************************************/
+
+.subnav {
+    width: 100%;
+    height: 80px;
+    padding: 0px 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/************************************ HOTEL SECTION ************************************/
+.hotel {
+    width: 100%;
+    padding: 10px 180px;
+}
+
+.breadcrumb {
+    height: 50px;
+}
+
+/*************************/
+/****** HOTEL NAME ******/
+/***********************/
+
+.info {
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-betwee;
+}
+
+.info__name {
+    flex:11;
+    order: 1;
+}
+
+.info__rattings {
+    flex:1;
+    order: 2;
+    width: 60px;
+    height: 55px;
+    line-height: 20px;
+    border-radius: 3px;
+    padding: 5px;
+    text-align: center;
+}
+
+/********************************/
+/****** BADGE FLASH OFFER ******/
+/******************************/
+#flash-offer {
+    padding: 3px 10px; 
+    position: relative; 
+    text-transform: capitalize;
+    left: 10px;
+    bottom: 5px;
+    border-radius: 3px;
+}
+
+/**********************************/
+/****** IMAGE, PLAN AND MAP ******/
+/*********************************/
+
+.image-plan-map {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image {
+    width: 728px;
+    height: 450px;
+    background: url('../img/grand-hilton-hotel.png');
+    flex: 2;
+    margin-right: 15px;
+}
+
+.plan-map {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.map {
+    width: 350px;
+    height: 210px;
+    flex: 1;
+    background: url('../img/Map.png');
+}
+
+.plan {
+    width: 350px;
+    height: 210px;
+    padding: 0 10px;
+    flex:1;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
