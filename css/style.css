@@ -43,8 +43,9 @@ ul {list-style-type: none;}
 
 .bold {font-weight: 700;}
 .uppercase {text-transform: uppercase;}
+.line-spacing {margin-bottom: 10px;}
 
-.active {border-bottom: 2px solid;}
+.active {padding-bottom: 15px; margin-top: 25px;border-bottom: 3px solid;}
 
 /**************************************** TOP NAVIGATION *****************************/
 
@@ -227,14 +228,14 @@ ul {list-style-type: none;}
 /****** IMAGE, PLAN AND MAP ******/
 /*********************************/
 
-.image-plan-map {
+.details {
     width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
 
-.image {
+.details__image {
     width: 728px;
     height: 450px;
     background: url('../img/grand-hilton-hotel.png');
@@ -243,14 +244,14 @@ ul {list-style-type: none;}
     border-radius: 10px;
 }
 
-.plan-map {
+.details__plan-map {
     flex: 1;
     display: flex;
     flex-direction: column;
     margin-left: 15px;
 }
 
-.map {
+.details__map {
     width: 350px;
     height: 210px;
     border-radius: 8px;
@@ -259,34 +260,68 @@ ul {list-style-type: none;}
     margin-top: 15px;
 }
 
-.plan {
+/*******************
+**** PLAN PANEL ****
+********************/
+
+.details__plan {
     width: 350px;
     height: 210px;
     margin-bottom: 15px;
     padding: 20px;
     border-radius: 8px;
     flex:1;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "price guest"
+        ". ."
+        ". ."
+        "booking number"
+        "button button"
 }
-.plan button {
+
+.price {grid-area: price; align-self: center;}
+.guest {grid-area: guest; justify-self: end; align-self: center;}
+.booking {grid-area: booking;}
+.number {grid-area: number; justify-self: end;}
+.plan-button {
         border-radius: 4px;
         border: none;
         width: 295px;
         height: 45px;
-        flex: 3;
+        grid-area: button;
+        justify-self: center;
+        align-self: end;
 }
 
 /****************************** PACKAGES ********************/
 .packages {
     width: 100%;
-    padding: 20px 180px;
+    padding: 0 180px;
 }
 
-.package-nav {
+.cardsmenu {
     width: 100%;
     height: 80px;
+    padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+.summery {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.package {width: 520px; margin: 10px; border-radius: 10px;}
+.package__title {line-height: 50px; padding: 0 20px; border-radius: 5px 5px 0 0;}
+.package__content {padding: 0 20px; border-radius: 0 0 5px 5px;}
+.package:last-child {flex-grow: 1;}
