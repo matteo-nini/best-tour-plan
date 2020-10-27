@@ -1,7 +1,7 @@
 # BEST TOUR PLAN #
 
 ### Description
-In this progect i have to create a landing page about a booking website.
+In this project i have to create a landing page about a booking website.
 
 ### Info
 Best Tour Plan is a plan's site where you can find your best booking, comparing to each others!
