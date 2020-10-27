@@ -391,7 +391,7 @@ ul {list-style-type: none;}
 }
 
 .other__packages__box__info {
-    padding: 40px 20px 20px 40px;
+    padding: 0px;
     position: relative;
     border-radius: 0 10px 10px 0;
 }
