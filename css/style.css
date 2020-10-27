@@ -258,7 +258,7 @@ ul {list-style-type: none;}
     height: 210px;
     border-radius: 8px;
     flex: 1;
-    background: url('../img/Map.png');
+    background: url('../img/map.png');
     margin-top: 15px;
 }
 
@@ -576,10 +576,10 @@ ul {list-style-type: none;}
     border-radius: 0;
 }
 
-.activities__box:nth-child(1){background: url('../img/a1.png');}
-.activities__box:nth-child(2){background: url('../img/a2.png');}
-.activities__box:nth-child(3){background: url('../img/a3.png');}
-.activities__box:nth-child(4){background: url('../img/a4.png');}
+.activities__box:nth-child(1){background: url('../img/barman.png');}
+.activities__box:nth-child(2){background: url('../img/golf.png');}
+.activities__box:nth-child(3){background: url('../img/falls.png');}
+.activities__box:nth-child(4){background: url('../img/boat.png');}
 
 .activities__box__title {margin-bottom: 20px;}
 .activities__box__button {padding: 7px 20px; border-radius: 5px;}
