@@ -491,6 +491,7 @@ ul {list-style-type: none;}
     margin: 100px auto 0 auto;
     padding: 50px 100px 30px;
     width: 730px;
+    border-radius: 5px;
     position: relative;
 }
 
